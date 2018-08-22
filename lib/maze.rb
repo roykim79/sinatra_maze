@@ -1,4 +1,5 @@
 class Maze
+  attr_reader :rooms
   attr_accessor :current_room
 
   def initialize()
@@ -23,7 +24,7 @@ class Maze
       5 => {
         :up => 2,
         :right => 6,
-        :left => 7
+        :left => 4
       },
       6 => {
         :left => 5

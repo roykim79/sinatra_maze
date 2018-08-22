@@ -1,0 +1,10 @@
+<h2>Room <%= @maze.current_room %></h2>
+
+<% if @maze.current_room == 9 %>
+  <h3>Congratulations, you made it</h3>
+  <a href="/">Start over</a>
+<% else %>
+  <% @maze.rooms[@maze.current_room].each do |direction, room_number| %>
+    <a href="/maze?room=<%= room_number %>"><%= direction %></a>
+  <% end %>
+<% end %>
