@@ -1,9 +1,9 @@
 require 'sinatra'
 require 'sinatra/reloader'
 also_reload 'lib/**/*.rb'
-# require './lib/####'
+require './lib/maze'
 require 'pry'
 
 get '/' do
-  
+
 end
